@@ -17,7 +17,7 @@
             $ terraform apply
             $ curl -vvv "$(terraform output -raw base_url)/"
             $ curl -vvv --header "Content-Type: application/json" --data '{"username":"asdf","password":"asdf"}' "$(terraform output -raw base_url)/api"
-            curl -vvv --header "Content-Type: application/json" --data '{"username":"xyz","password":"xyz"}' "$(terraform output -raw base_url)/api"
+            $ curl -vvv --header "Content-Type: application/json" --data '{"username":"xyz","password":"xyz"}' "$(terraform output -raw base_url)/api"
 
             ## make changes locally since the code is mounted, no need to restart the container
             ## Run these steps after making changes for it to take effect
